@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans:ital@0;1&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Recipes</title>
+    <link rel="icon" type="image/x-icon" href="./images/cooking.png">
 </head>
 <body>
-    <a href="#main">Skip to Main Content</a>
+    <a href="#main" class="skip">Skip to Main Content</a>
     <nav>
         <ul>
             <li><a href = "index.html">Pets</a></li>
@@ -19,11 +23,8 @@
     </nav>
 
     <main id="main">
-        <img class="paw" id="chef" width="50" src="images/cooking.png" alt="chef hat">
-        <br>
-        <br>
-        <br>
         <h1>Recipes</h1>
+        <div id="recipe_cursor"> </div>
         <!-- Recipe #1 -->
         <div id="button_container">
             <button onclick="show_shrimp()" id="shrimp_button">Shrimp Scampi</button>
@@ -31,6 +32,143 @@
             <button onclick="show_pancakes()" id="pancake_button">Dutch Baby Pancake</button>
             <button onclick="show_all()" id="all_button">All</button>
         </div>
+
+        <div id="shrimp">
+            <div class="description_container" id="recipe_container">
+                <h2 class="typing-container">Shrimp Scampi</h2>
+                <div id="origin">Origin: Italian</div>
+                <div id="source">Source: NYTimes</div>
+                <div id="category">Category: Main dish</div>
+                <img class="primary_image recipe_img" src="images/shrimpscampicooking.jpg" width="200" alt="shrimp image">
+                <p id="recipe" class="recipe_one">Shrimp scampi is a classic Italian-American delight, 
+                    where succulent shrimp meet a medley of garlic, butter, 
+                    and white wine. Sautéed to pink perfection, the shrimp mingle with a 
+                    fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful 
+                </p>
+            </div>
+
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li class="recipe_list">2 tablespoons butter </li>
+                <li class="recipe_list">2 tablespoons extra-virgin olive oil</li>
+                <li class="recipe_list">4 garlic cloves, minced</li>
+                <li class="recipe_list">½ cup dry white wine or broth</li>
+                <li class="recipe_list">¾ teaspoon kosher salt, or to taste</li>
+                <li class="recipe_list">⅛ teaspoon crushed red pepper flakes, or to taste</li>
+                <li class="recipe_list">Freshly ground black pepper</li>
+                <li class="recipe_list">1¾ pounds large or extra-large shrimp, shelled</li>
+                <li class="recipe_list">⅓ cup chopped parsley</li>
+                <li class="recipe_list">Freshly squeezed juice of half a lemon</li>
+                <li class="recipe_list"> Cooked pasta or crusty bread </li>
+            </ul>
+    
+            <h3>Recipe Steps</h3> 
+            <ol>
+                <li class="recipe_steps">In a large skillet, melt butter with olive oil.</li>
+                <li class="recipe_steps">Add garlic and sauté until fragrant, about 1 minute.</li>
+                <li class="recipe_steps">Add wine or broth, salt, red pepper flakes and plenty of black pepper and brnig to simmer</li>
+                <li class="recipe_steps">Let the wine reduce by half, about 2 minutes.</li>
+                <li class="recipe_steps">Add shrimp and sauté until they just turn pink, 2 to 4 minutes depending upon their size.</li>
+                <li class="recipe_steps"> Stir in the parsley and lemon juice serve over pasta or accompanied by crusty bread.</li> 
+                <li class="recipe_steps">Slice the avocado and lay those on the top of the dish</li>
+            </ol>
+
+            <h3>Additional Food images</h3> 
+            <div class="food_gallery" onmouseenter="fadeInImages()" onmouseleave="fadeOutImages()">
+                <img class="fade" src="images/pastaCooking.jpg" alt ="Pasta being lifted by a fork in a pot of boiling water. It is almost finished cooking.">
+                <img class="fade" src="images/shrimpscampicooking.jpg" alt ="Shrimp cooking in a sauce of butter and wine. It is being stirred with a spoon.">
+                <img class="fade" src="images/shrimpcooking.jpg" alt ="Shrimp is cooking until it is pink. Shrimp is almost finished cooking.">
+            </div>
+            
+        </div>
+        <!-- Recipe #2 -->
+        <div id="sushi">
+            <div class="description_container" id="recipe_container2">
+                <h2 class="typing-container">Sushi Bake</h2>
+                <div id="origin2">Origin: Asian</div>
+                <div id="source2">Source: Own Recipe</div>
+                <div id="category2">Category: Main dish</div>
+                <img  class="primary_image recipe_img" src="images/sushiBake.jpeg" width="200" alt="sushi image">
+                <p id="recipe1" class="recipe_one">Do you want easy, quick way to enjoy sushi without having to do all of the work? Try to make our sushi bake, which takes 10 minutes to assemble and 20 minutes to bake in the oven. Our recipe feeds 8 people.</p>
+            </div>
+            
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li class="recipe_list">1 avocado </li>
+                <li class="recipe_list">1/2 cup soon sauce</li>
+                <li class="recipe_list">2 cups of rice</li>
+                <li class="recipe_list">1 tablespoon of rice vinegar</li>
+                <li class="recipe_list">3 tablespoons of mayo</li>
+                <li class="recipe_list">1 8 oz package of imitation crab</li>
+                <li class="recipe_list">1 medium piece of salmon</li>
+                <li class="recipe_list">1 cucumber</li>
+                <li class="recipe_list">3 tablespoons of sriracha</li>
+            </ul>
+    
+            <h3>Recipe Steps</h3> 
+            <ol>
+                <li class="recipe_steps">Preheat oven to 350 degrees</li>
+                <li class="recipe_steps">Make rice. Mix rice vinegar into rice after it is cooked</li>
+                <li class="recipe_steps">Lay out all of the rice at the bottom of a large baking dish</li>
+                <li class="recipe_steps">Lay out the imitation crab and cucumber on top of the rice</li>
+                <li class="recipe_steps">Mix the imitation crab and 2 TBSP mayo into a crab salad</li>
+                <li class="recipe_steps">Smear the crab salad onto the next layer </li> 
+                <li class="recipe_steps">Slice the avocado and lay those on the top of the dish</li>
+                <li class="recipe_steps">Pour the rest of the mayo and sriracha on top</li>
+                <li class="recipe_steps">Bake for 20 minutes</li>
+                <li class="recipe_steps">Enjoy!</li>
+            </ol>
+    
+            <h3>Additional Food images</h3>
+            <div class="food_gallery" onmouseenter="fadeInImages()" onmouseleave="fadeOutImages()">
+                <img class="fade" src="images/rice.jpeg" width = "200" alt="Make your rice and mix the rice vinegar into it">
+                <img class="fade" src="images/avocado.jpeg" width = "200" alt="Sliced avocado from step 7">
+            </div>
+            
+            <!-- Ethan Tai and Joshua Vijayasegar -->
+        </div>
+        <!-- Recipe #3 -->
+        <div id="pancake">
+            <div class="description_container" id="recipe_container3">
+                <h2 class="typing-container">Dutch Baby Pancake</h2>
+                <div id="origin3">Origin: Washington</div>
+                <div id="source3">Source: Own Recipe</div>
+                <div id="category3">Category: Main dish</div>
+                <img  class="primary_image recipe_img" src="images/DutchBabyWithSides.jpg" width="200" alt="Dutch baby with sugar">
+                <p id="recipe2" class="recipe_one">An eggy sweet pancake. Tastes and smells like nutmeg and sugar. Rises with heat and falls elsewhere. Is essentially a giant crepe.</p>
+            </div>
+            
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li class="recipe_list">½ cup flour </li>
+                <li class="recipe_list">¼ cup sugar</li>
+                <li class="recipe_list">⅛ teaspoon nutmeg</li>
+                <li class="recipe_list">3 eggs</li>
+                <li class="recipe_list">⅔ cup milk</li>
+                <li class="recipe_list">¼ oil</li>
+            </ul>
+    
+            <h3>Recipe Steps</h3> 
+            <ol>
+                <li class="recipe_steps">Preheat oven to 425 degrees</li>
+                <li class="recipe_steps">Put pan in oven with the oil</li>
+                <li class="recipe_steps">Mix dry ingredients</li>
+                <li class="recipe_steps">Mix eggs and milk</li>
+                <li class="recipe_steps">Mix all together</li>
+                <li class="recipe_steps">Let it sit for ten minutes </li> 
+                <li class="recipe_steps">Put in oven for 14 minutes</li>
+                <li class="recipe_steps">Enjoy!</li>
+            </ol>
+    
+            <h3>Additional Food images</h3>
+            <div class="food_gallery" onmouseenter="fadeInImages()" onmouseleave="fadeOutImages()">
+                <img class="fade" src="images/dutchbaby.jpg" width = "200" alt="Make your rice and mix the rice vinegar into it">
+                <img class="fade" src="images/David-eyres-pancake.jpg" width = "200" alt="Variation of dutch baby with no salt">
+                <img class="fade" src="images/Savory-Herb-Butter-Dutch-Baby-1.jpg" width = "200" alt="It’s essentially what I would call blasphemy as pancakes have to be sweet for me.">
+            </div>
+            <!-- Danny Mo/ danmor -->
+        </div>
+
         <script>
             function show_shrimp() {
                 // Show shrimp and hide the others
@@ -77,146 +215,30 @@
 
             }
 
+            const cursorControl = event => {
+            const cursor = document.querySelector("#recipe_cursor");
+                cursor.style.left = `${event.pageX}px`;
+                cursor.style.top = `${event.pageY}px`;
+            };
+
+            document.addEventListener("mousemove", cursorControl, false);
+
+            function fadeInImages() {
+                const images = document.querySelectorAll('.fade');
+                console.log(images)
+                images.forEach(image => {
+                    image.style.opacity = 1;
+                });
+            }
+
+            function fadeOutImages() {
+                const images = document.querySelectorAll('.fade');
+                images.forEach(image => {
+                    image.style.opacity = 0;
+                });
+            }
+
         </script>
-
-        <div id="shrimp">
-            <h2>Shrimp Scampi</h2>
-            <span>Origin: Italian</span>
-            <span>Source: NYTimes</span>
-            <span>Category: Main dish</span>
-            <div class="description_container">
-                
-                <img class="primary_image" src="images/shrimpscampicooking.jpg" width="200" alt="">
-                
-                <p class="recipe_one">Shrimp scampi is a classic Italian-American delight, 
-                    where succulent shrimp meet a medley of garlic, butter, 
-                    and white wine. Sautéed to pink perfection, the shrimp mingle with a 
-                    fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful 
-                </p>
-            </div>
-
-            <h3>Recipe Ingredients</h3>
-            <ul>
-                <li class="recipe_list">2 tablespoons butter </li>
-                <li class="recipe_list">2 tablespoons extra-virgin olive oil</li>
-                <li class="recipe_list">4 garlic cloves, minced</li>
-                <li class="recipe_list">½ cup dry white wine or broth</li>
-                <li class="recipe_list">¾ teaspoon kosher salt, or to taste</li>
-                <li class="recipe_list">⅛ teaspoon crushed red pepper flakes, or to taste</li>
-                <li class="recipe_list">Freshly ground black pepper</li>
-                <li class="recipe_list">1¾ pounds large or extra-large shrimp, shelled</li>
-                <li class="recipe_list">⅓ cup chopped parsley</li>
-                <li class="recipe_list">Freshly squeezed juice of half a lemon</li>
-                <li class="recipe_list"> Cooked pasta or crusty bread </li>
-            </ul>
-    
-            <h3>Recipe Steps</h3> 
-            <ol>
-                <li>In a large skillet, melt butter with olive oil.</li>
-                <li>Add garlic and sauté until fragrant, about 1 minute.</li>
-                <li>Add wine or broth, salt, red pepper flakes and plenty of black pepper and brnig to simmer</li>
-                <li>Let the wine reduce by half, about 2 minutes.</li>
-                <li>Add shrimp and sauté until they just turn pink, 2 to 4 minutes depending upon their size.</li>
-                <li> Stir in the parsley and lemon juice serve over pasta or accompanied by crusty bread.</li> 
-                <li>Slice the avocado and lay those on the top of the dish</li>
-            </ol>
-
-            <h3>Additional Food images</h3> 
-            <div class="food_gallery">
-                <img src="images/pastaCooking.jpg" alt ="Pasta being lifted by a fork in a pot of boiling water. It is almost finished cooking.">
-                <img src="images/shrimpscampicooking.jpg" alt ="Shrimp cooking in a sauce of butter and wine. It is being stirred with a spoon.">
-                <img src="images/shrimpcooking.jpg" alt ="Shrimp is cooking until it is pink. Shrimp is almost finished cooking.">
-            </div>
-            
-        </div>
-        <!-- Recipe #2 -->
-        <div id="sushi">
-            <h2>Sushi Bake</h2>
-            <span>Origin: Asian</span>
-            <span>Source: Own Recipe</span>
-            <span>Category: Main dish</span>
-            <div class="description_container">
-                <img  class="primary_image" src="images/sushiBake.jpeg" width="200" alt="">
-            
-                <p class="recipe_one">Do you want easy, quick way to enjoy sushi without having to do all of the work? Try to make our sushi bake, which takes 10 minutes to assemble and 20 minutes to bake in the oven. Our recipe feeds 8 people.</p>
-            </div>
-            
-            <h3>Recipe Ingredients</h3>
-            <ul>
-                <li class="recipe_list">1 avocado </li>
-                <li class="recipe_list">1/2 cup soon sauce</li>
-                <li class="recipe_list">2 cups of rice</li>
-                <li class="recipe_list">1 tablespoon of rice vinegar</li>
-                <li class="recipe_list">3 tablespoons of mayo</li>
-                <li class="recipe_list">1 8 oz package of imitation crab</li>
-                <li class="recipe_list">1 medium piece of salmon</li>
-                <li class="recipe_list">1 cucumber</li>
-                <li class="recipe_list">3 tablespoons of sriracha</li>
-            </ul>
-    
-            <h3>Recipe Steps</h3> 
-            <ol>
-                <li>Preheat oven to 350 degrees</li>
-                <li>Make rice. Mix rice vinegar into rice after it is cooked</li>
-                <li>Lay out all of the rice at the bottom of a large baking dish</li>
-                <li>Lay out the imitation crab and cucumber on top of the rice</li>
-                <li>Mix the imitation crab and 2 TBSP mayo into a crab salad</li>
-                <li>Smear the crab salad onto the next layer </li> 
-                <li>Slice the avocado and lay those on the top of the dish</li>
-                <li>Pour the rest of the mayo and sriracha on top</li>
-                <li>Bake for 20 minutes</li>
-                <li>Enjoy!</li>
-            </ol>
-    
-            <h3>Additional Food images</h3>
-            <div class="food_gallery">
-                <img src="images/rice.jpeg" width = "200" alt="Make your rice and mix the rice vinegar into it">
-                <img src="images/avocado.jpeg" width = "200" alt="Sliced avocado from step 7">
-            </div>
-            
-            <!-- Ethan Tai and Joshua Vijayasegar -->
-        </div>
-        <!-- Recipe #3 -->
-        <div id="pancake">
-            <h2>Dutch Baby Pancake</h2>
-            <span>Origin: Washington</span>
-            <span>Source: Own Recipe</span>
-            <span>Category: Main dish</span>
-            <div class="description_container">
-                <img  class="primary_image" src="images/DutchBabyWithSides.jpg" width="200" alt="Dutch baby with sugar">
-                <p class="recipe_one">An eggy sweet pancake. Tastes and smells like nutmeg and sugar. Rises with heat and falls elsewhere. Is essentially a giant crepe.</p>
-            </div>
-            
-            <h3>Recipe Ingredients</h3>
-            <ul>
-                <li class="recipe_list">½ cup flour </li>
-                <li class="recipe_list">¼ cup sugar</li>
-                <li class="recipe_list">⅛ teaspoon nutmeg</li>
-                <li class="recipe_list">3 eggs</li>
-                <li class="recipe_list">⅔ cup milk</li>
-                <li class="recipe_list">¼ oil</li>
-            </ul>
-    
-            <h3>Recipe Steps</h3> 
-            <ol>
-                <li>Preheat oven to 425 degrees</li>
-                <li>Put pan in oven with the oil</li>
-                <li>Mix dry ingredients</li>
-                <li>Mix eggs and milk</li>
-                <li>Mix all together</li>
-                <li>Let it sit for ten minutes </li> 
-                <li>Put in oven for 14 minutes</li>
-                <li>Enjoy!</li>
-            </ol>
-    
-            <h3>Additional Food images</h3>
-            <div class="food_gallery">
-                <img src="images/dutchbaby.jpg" width = "200" alt="Make your rice and mix the rice vinegar into it">
-                <img src="images/David-eyres-pancake.jpg" width = "200" alt="Variation of dutch baby with no salt">
-                <img src="images/Savory-Herb-Butter-Dutch-Baby-1.jpg" width = "200" alt="It’s essentially what I would call blasphemy as pancakes have to be sweet for me.">
-            </div>
-            <!-- Danny Mo/ danmor -->
-        </div>
     </main>
 </body>
 </html>
